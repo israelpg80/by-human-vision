@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import profilePhoto from './assets/israel-profile.jpg'
 import './App.css'
 
 const experience = [
@@ -169,28 +170,38 @@ function App() {
         </div>
       </section>
 
-      <section id="sobre-mi" className="section two-column">
+      <section id="sobre-mi" className="section two-column about-section">
         <div>
           <p className="section-kicker">Sobre mí</p>
           <h2>Ser el puente entre negocio y tecnología, con visión humana.</h2>
           <p className="brand-hashtag">#ByHumanVision</p>
         </div>
 
-        <div className="content-block">
-          <p>
-            Construí mi carrera desde la base técnica: infraestructura, SAP,
-            aplicaciones empresariales, soporte, desarrollo, operación crítica y
-            plataformas corporativas.
-          </p>
-          <p>
-            Después evolucioné hacia liderazgo regional, transformación digital,
-            Data & AI, gobierno de datos, modelos operativos y construcción de
-            equipos.
-          </p>
-          <p>
-            Mi fortaleza está en traducir ecosistemas tecnológicos complejos en
-            capacidades que negocio pueda adoptar, medir y escalar.
-          </p>
+        <div className="about-content">
+          <div className="content-block">
+            <p>
+              Construí mi carrera desde la base técnica: infraestructura, SAP,
+              aplicaciones empresariales, soporte, desarrollo, operación crítica y
+              plataformas corporativas.
+            </p>
+            <p>
+              Después evolucioné hacia liderazgo regional, transformación digital,
+              Data & AI, gobierno de datos, modelos operativos y construcción de
+              equipos.
+            </p>
+            <p>
+              Mi fortaleza está en traducir ecosistemas tecnológicos complejos en
+              capacidades que negocio pueda adoptar, medir y escalar.
+            </p>
+          </div>
+
+          <div className="about-photo-wrap">
+            <img
+              src={profilePhoto}
+              alt="Israel Pérez García"
+              className="about-photo"
+            />
+          </div>
         </div>
       </section>
 
