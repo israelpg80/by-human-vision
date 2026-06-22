@@ -4,6 +4,13 @@ import './App.css'
 
 const experience = [
   {
+    year: '2025 — Presente',
+    role: 'Independent Consultant | Technology, Data & AI Transformation',
+    company: 'By Human Vision · Independent Advisory',
+    description:
+  'Acompañamiento estratégico para líderes de tecnología y negocio en transformación digital, estrategia de datos, adopción de IA, modelos operativos y modernización de plataformas. Mi enfoque conecta arquitectura, datos, procesos y ejecución con resultados medibles de negocio.',
+  },
+  {
     year: '2024 — Presente',
     role: 'Director of Data, Analytics & AI',
     company: 'Mondelēz International',
@@ -157,7 +164,7 @@ function App() {
         <div className="hero-panel">
           <div className="panel-card">
             <span className="metric">20+</span>
-            <p>Años liderando tecnología, datos y transformación.</p>
+            <p>Años liderando tecnología, datos y transformación digital.</p>
           </div>
           <div className="panel-card">
             <span className="metric">54</span>
@@ -191,7 +198,7 @@ function App() {
             </p>
             <p>
               Mi fortaleza está en traducir ecosistemas tecnológicos complejos en
-              capacidades que negocio pueda adoptar, medir y escalar.
+              capacidades que el negocio pueda adoptar, medir y escalar.
             </p>
           </div>
 
@@ -208,10 +215,12 @@ function App() {
       <section className="section quote-section">
         <div className="quote-card">
           <p>
-            Entiender los bits & bytes y conectar con P&L. Mi función
-            es hacer que tecnología, datos e IA hablen el mismo idioma que
-            negocio.
-          </p>
+            Entender el negocio y traducirlo en tecnología.
+            <br />
+            Conectar datos, IA y plataformas con el P&L.
+            <br />
+             Hacer que la estrategia se convierta en ejecución.
+           </p>
         </div>
       </section>
 
@@ -306,10 +315,10 @@ function App() {
 
       <section id="contacto" className="section contact-section">
         <p className="section-kicker">Contacto</p>
-        <h2>Construyamos tecnología con visión humana.</h2>
+        <h2>Construyamos capacidades tecnológicas que el negocio pueda adoptar, medir y escalar.</h2>
         <p>
-          Disponible para colaboración estratégica, conferencias, advisory y
-          proyectos relacionados con Data, Analytics, AI y transformación digital.
+          Disponible para conferencias, paneles ejecutivos, advisory y colaboración
+          estratégica en tecnología, datos, inteligencia artificial y transformación digital.
         </p>
 
         <div className="contact-actions">
@@ -318,7 +327,7 @@ function App() {
           </a>
           <a
             className="button secondary"
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/israelperezgarcia/"
             target="_blank"
             rel="noreferrer"
           >
@@ -329,7 +338,7 @@ function App() {
 
       <footer className="footer">
         <span>© {currentYear} By Human Vision</span>
-        <span>Built as a SPA with React + Vite</span>
+        <span>Technology · Data & AI · Human Insight</span>
       </footer>
     </main>
   )
