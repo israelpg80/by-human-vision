@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import profilePhoto from './assets/israel-profile.jpg'
+import heroPhoto from './assets/israel-hero.jpg'
+import aboutPhoto from './assets/israel-about.jpg'
 import './App.css'
 
 const experience = [
@@ -8,7 +9,7 @@ const experience = [
     role: 'Independent Consultant | Technology, Data & AI Transformation',
     company: 'By Human Vision · Independent Advisory',
     description:
-  'Acompañamiento estratégico para líderes de tecnología y negocio en transformación digital, estrategia de datos, adopción de IA, modelos operativos y modernización de plataformas. Mi enfoque conecta arquitectura, datos, procesos y ejecución con resultados medibles de negocio.',
+      'Acompañamiento estratégico para líderes de tecnología y negocio en transformación digital, estrategia de datos, adopción de IA, modelos operativos y modernización de plataformas. Mi enfoque conecta arquitectura, datos, procesos y ejecución con resultados medibles de negocio.',
   },
   {
     year: '2024 — Presente',
@@ -137,18 +138,23 @@ function App() {
       </nav>
 
       <section id="inicio" className="hero section">
-        <div className="hero-content">
-          <p className="eyebrow">Technology · Data & Engineering · AI & Human Insight</p>
+        <div className="hero-copy">
+          <p className="eyebrow">
+            Technology · Data & Engineering · AI & Human Insight
+          </p>
+
           <h1>
             Transformar negocios con tecnología, datos e IA desde la estrategia
             hasta la ejecución.
           </h1>
+
           <p className="hero-description">
-             Soy Israel Pérez García, líder senior en tecnología, datos, ingeniería
-             e inteligencia artificial con más de 20 años de experiencia en CPG,
-             banca, manufactura y automotriz. Conecto estrategia, arquitectura,
-             plataformas digitales y visión humana para convertir transformación
-             tecnológica en resultados medibles de negocio.
+            Soy Israel Pérez García, líder senior en tecnología, datos,
+            ingeniería e inteligencia artificial con más de 20 años de
+            experiencia en CPG, banca, manufactura y automotriz. Conecto
+            estrategia, arquitectura, plataformas digitales y visión humana para
+            convertir transformación tecnológica en resultados medibles de
+            negocio.
           </p>
 
           <div className="hero-actions">
@@ -161,50 +167,69 @@ function App() {
           </div>
         </div>
 
-        <div className="hero-panel">
-          <div className="panel-card">
-            <span className="metric">20+</span>
-            <p>Años liderando tecnología, datos y transformación digital.</p>
+        <div className="hero-visual">
+          <div className="hero-photo-frame">
+            <img
+              src={heroPhoto}
+              alt="Israel Pérez García"
+              className="hero-photo"
+            />
           </div>
-          <div className="panel-card">
-            <span className="metric">54</span>
-            <p>Personas en equipos regionales bajo modelos de operación crítica.</p>
-          </div>
-          <div className="panel-card">
-            <span className="metric">LATAM / NA</span>
-            <p>Experiencia en industrias globales y entornos multinacionales.</p>
+
+          <div className="hero-metrics">
+            <div className="metric-card">
+              <span>20+</span>
+              <p>Años liderando tecnología, datos y transformación.</p>
+            </div>
+
+            <div className="metric-card">
+              <span>54</span>
+              <p>
+                Personas en equipos regionales bajo modelos de operación
+                crítica.
+              </p>
+            </div>
+
+            <div className="metric-card">
+              <span>LATAM / NA</span>
+              <p>Experiencia en industrias globales y entornos multinacionales.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="sobre-mi" className="section two-column about-section">
-        <div>
-          <p className="section-kicker">Sobre mí</p>
-          <h2>Ser el puente entre negocio y tecnología, con visión humana.</h2>
-          <p className="brand-hashtag">#ByHumanVision</p>
+      <section id="sobre-mi" className="section about-section">
+        <div className="about-header">
+          <div>
+            <p className="section-kicker">Sobre mí</p>
+            <h2>Ser el puente entre negocio y tecnología, con visión humana.</h2>
+            <p className="brand-hashtag">#ByHumanVision</p>
+          </div>
         </div>
 
         <div className="about-content">
-          <div className="content-block">
+          <div className="about-text">
             <p>
               Construí mi carrera desde la base técnica: infraestructura, SAP,
-              aplicaciones empresariales, soporte, desarrollo, operación crítica y
-              plataformas corporativas.
+              aplicaciones empresariales, soporte, desarrollo, operación crítica
+              y plataformas corporativas.
             </p>
+
             <p>
-              Después evolucioné hacia liderazgo regional, transformación digital,
-              Data & AI, gobierno de datos, modelos operativos y construcción de
-              equipos.
+              Después evolucioné hacia liderazgo regional, transformación
+              digital, Data & AI, gobierno de datos, modelos operativos y
+              construcción de equipos.
             </p>
+
             <p>
-              Mi fortaleza está en traducir ecosistemas tecnológicos complejos en
-              capacidades que el negocio pueda adoptar, medir y escalar.
+              Mi fortaleza está en traducir ecosistemas tecnológicos complejos
+              en capacidades que el negocio pueda adoptar, medir y escalar.
             </p>
           </div>
 
           <div className="about-photo-wrap">
             <img
-              src={profilePhoto}
+              src={aboutPhoto}
               alt="Israel Pérez García"
               className="about-photo"
             />
@@ -217,17 +242,20 @@ function App() {
           <p>
             Entender el negocio y traducirlo en tecnología.
             <br />
-            Conectar datos, IA y plataformas con el P&L.
+            Conectar datos, IA y plataformas con el P&amp;L.
             <br />
-             Hacer que la estrategia se convierta en ejecución.
-           </p>
+            Hacer que la estrategia se convierta en ejecución.
+          </p>
         </div>
       </section>
 
       <section id="trayectoria" className="section">
         <div className="section-heading">
           <p className="section-kicker">Trayectoria</p>
-          <h2>Experiencia ejecutiva en Transformación Digital, Tecnología, datos e IA.</h2>
+          <h2>
+            Experiencia ejecutiva en Transformación Digital, Tecnología, datos e
+            IA.
+          </h2>
         </div>
 
         <div className="timeline">
@@ -315,10 +343,14 @@ function App() {
 
       <section id="contacto" className="section contact-section">
         <p className="section-kicker">Contacto</p>
-        <h2>Construyamos capacidades tecnológicas que el negocio pueda adoptar, medir y escalar.</h2>
+        <h2>
+          Construyamos capacidades tecnológicas que el negocio pueda adoptar,
+          medir y escalar.
+        </h2>
         <p>
-          Disponible para conferencias, paneles ejecutivos, advisory y colaboración
-          estratégica en tecnología, datos, inteligencia artificial y transformación digital.
+          Disponible para conferencias, paneles ejecutivos, advisory y
+          colaboración estratégica en tecnología, datos, inteligencia artificial y
+          transformación digital.
         </p>
 
         <div className="contact-actions">
